@@ -11,6 +11,11 @@
 		13194B8C2B6D080C0010EFC0 /* Locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13194B8B2B6D080C0010EFC0 /* Locations.plist */; };
 		13194B8E2B6D0EED0010EFC0 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13194B8D2B6D0EED0010EFC0 /* LocationManager.swift */; };
 		13568DD32B63C580001EC24B /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13568DD22B63C580001EC24B /* RestaurantListViewController.swift */; };
+		136251C42B7B7AC8006698DE /* FilterDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136251C32B7B7AC8006698DE /* FilterDataManager.swift */; };
+		136251C62B7B7BE3006698DE /* ImageFiltering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136251C52B7B7BE3006698DE /* ImageFiltering.swift */; };
+		136251C82B7BA01B006698DE /* FilterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136251C72B7BA01B006698DE /* FilterItem.swift */; };
+		136251CB2B7BA247006698DE /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136251CA2B7BA247006698DE /* FilterCell.swift */; };
+		136251CD2B7BAB8E006698DE /* PhotoFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136251CC2B7BAB8E006698DE /* PhotoFilterViewController.swift */; };
 		136DB3172B7265AD00615E1B /* MapLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 136DB3162B7265AD00615E1B /* MapLocations.plist */; };
 		136DB3192B72665600615E1B /* RestaurantItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136DB3182B72665600615E1B /* RestaurantItem.swift */; };
 		136DB31B2B726C0F00615E1B /* MapDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136DB31A2B726C0F00615E1B /* MapDataManager.swift */; };
@@ -61,6 +66,11 @@
 		13194B8B2B6D080C0010EFC0 /* Locations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Locations.plist; sourceTree = "<group>"; };
 		13194B8D2B6D0EED0010EFC0 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		13568DD22B63C580001EC24B /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
+		136251C32B7B7AC8006698DE /* FilterDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDataManager.swift; sourceTree = "<group>"; };
+		136251C52B7B7BE3006698DE /* ImageFiltering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFiltering.swift; sourceTree = "<group>"; };
+		136251C72B7BA01B006698DE /* FilterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterItem.swift; sourceTree = "<group>"; };
+		136251CA2B7BA247006698DE /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		136251CC2B7BAB8E006698DE /* PhotoFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFilterViewController.swift; sourceTree = "<group>"; };
 		136DB3162B7265AD00615E1B /* MapLocations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MapLocations.plist; sourceTree = "<group>"; };
 		136DB3182B72665600615E1B /* RestaurantItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantItem.swift; sourceTree = "<group>"; };
 		136DB31A2B726C0F00615E1B /* MapDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataManager.swift; sourceTree = "<group>"; };
@@ -144,6 +154,14 @@
 				13E2B0CD2B75348700169588 /* LocationItem.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		136251C92B7BA217006698DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				136251CA2B7BA247006698DE /* FilterCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		136DB3142B7264D900615E1B /* Map */ = {
@@ -236,6 +254,8 @@
 			isa = PBXGroup;
 			children = (
 				13D6A86C2B7B6F11000947B4 /* FilterData.plist */,
+				136251C32B7B7AC8006698DE /* FilterDataManager.swift */,
+				136251C72B7BA01B006698DE /* FilterItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -263,8 +283,11 @@
 		13E1DBDC2B73B9CB009D1BC0 /* PhotoFilter */ = {
 			isa = PBXGroup;
 			children = (
+				136251C92B7BA217006698DE /* View */,
 				13D6A86B2B7B6EC8000947B4 /* Model */,
 				13E1DBE02B73BA32009D1BC0 /* PhotoFilter.storyboard */,
+				136251C52B7B7BE3006698DE /* ImageFiltering.swift */,
+				136251CC2B7BAB8E006698DE /* PhotoFilterViewController.swift */,
 			);
 			path = PhotoFilter;
 			sourceTree = "<group>";
@@ -429,9 +452,14 @@
 			files = (
 				13E2B0CE2B75348700169588 /* LocationItem.swift in Sources */,
 				13D6A8682B7A6C2E000947B4 /* RatingsView.swift in Sources */,
+				136251C82B7BA01B006698DE /* FilterItem.swift in Sources */,
 				13E2B0D02B75392F00169588 /* ExploreHeaderView.swift in Sources */,
 				138AD9972B6C5E2200DAD69C /* ExploreItem.swift in Sources */,
+				136251CD2B7BAB8E006698DE /* PhotoFilterViewController.swift in Sources */,
+				136251CB2B7BA247006698DE /* FilterCell.swift in Sources */,
 				136DB31E2B7271DB00615E1B /* DataManager.swift in Sources */,
+				136251C42B7B7AC8006698DE /* FilterDataManager.swift in Sources */,
+				136251C62B7B7BE3006698DE /* ImageFiltering.swift in Sources */,
 				136DB31B2B726C0F00615E1B /* MapDataManager.swift in Sources */,
 				13E4D90F2B766EE800F223E8 /* NoDataView.swift in Sources */,
 				137E714D2B62944C005F6F37 /* AppDelegate.swift in Sources */,

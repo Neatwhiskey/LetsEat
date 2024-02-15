@@ -245,7 +245,7 @@
                                                                     <rect key="frame" x="-0.5" y="0.0" width="120" height="62"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <connections>
-                                                                        <segue destination="GBa-F2-6Oj" kind="presentation" identifier="" modalPresentationStyle="fullScreen" id="9tb-aG-qwY"/>
+                                                                        <segue destination="dOI-Xj-llg" kind="show" id="402-6U-Xl5"/>
                                                                     </connections>
                                                                 </button>
                                                             </subviews>
@@ -344,7 +344,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhO-2v-lBq">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhO-2v-lBq">
                                                     <rect key="frame" x="15" y="9" width="345" height="28"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="28" id="9rS-Fh-Y84"/>
@@ -657,6 +657,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hqk-2d-T93" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5266" y="-217"/>
+        </scene>
+        <!--PhotoFilter-->
+        <scene sceneID="UZN-ei-zmW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PhotoFilter" id="dOI-Xj-llg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="A1Q-RP-5Pv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jbe-Js-siJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5407" y="-36"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ewN-N1-hXd">
