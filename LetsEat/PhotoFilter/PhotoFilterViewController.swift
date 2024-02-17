@@ -21,6 +21,12 @@ class PhotoFilterViewController: UIViewController{
         super.viewDidLoad()
         initialize()
 
+class PhotoFilterViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+
         // Do any additional setup after loading the view.
     }
     
@@ -36,6 +42,7 @@ class PhotoFilterViewController: UIViewController{
     */
 
 }
+
 
     // MARK: - Private Extension
 private extension PhotoFilterViewController {
@@ -167,3 +174,4 @@ extension PhotoFilterViewController: UICollectionViewDelegate {
         filterMainImage(filterItem: filterItem)
     }
 }
+
