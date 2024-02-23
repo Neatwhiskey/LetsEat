@@ -492,7 +492,7 @@
                                             <outlet property="cuisineLabel" destination="ASW-wr-ggd" id="nZn-iE-5Jy"/>
                                             <outlet property="restaurantImageView" destination="3bh-2w-dzj" id="bdj-7t-0sd"/>
                                             <outlet property="titleLabel" destination="eh2-bA-Gxz" id="AOh-Z9-w6g"/>
-                                            <segue destination="FwU-i5-gPn" kind="show" identifier="showDetail" id="JWS-Ws-96f"/>
+                                            <segue destination="FwU-i5-gPn" kind="show" identifier="showDetail" id="DU1-O2-oxE"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -522,7 +522,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="JWS-Ws-96f"/>
+        <segue reference="DU1-O2-oxE"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="american" width="88.5" height="64.5"/>

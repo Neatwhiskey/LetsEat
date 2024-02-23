@@ -245,7 +245,7 @@
                                                                     <rect key="frame" x="-0.5" y="0.0" width="120" height="62"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <connections>
-                                                                        <segue destination="dOI-Xj-llg" kind="show" id="402-6U-Xl5"/>
+                                                                        <segue destination="dOI-Xj-llg" kind="show" identifier="" id="402-6U-Xl5"/>
                                                                     </connections>
                                                                 </button>
                                                             </subviews>
@@ -290,7 +290,7 @@
                                                                     <rect key="frame" x="-0.5" y="0.0" width="120" height="62"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <connections>
-                                                                        <segue destination="XG8-Ri-pIR" kind="presentation" identifier="" modalPresentationStyle="fullScreen" id="lDE-DR-HB9"/>
+                                                                        <segue destination="XG8-Ri-pIR" kind="presentation" identifier="showReview" modalPresentationStyle="fullScreen" id="lDE-DR-HB9"/>
                                                                     </connections>
                                                                 </button>
                                                             </subviews>
@@ -641,14 +641,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kcE-61-elL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4903" y="215"/>
-        </scene>
-        <!--PhotoFilter-->
-        <scene sceneID="10V-97-DCA">
-            <objects>
-                <viewControllerPlaceholder storyboardName="PhotoFilter" id="GBa-F2-6Oj" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ocq-A6-fJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5266" y="-441"/>
         </scene>
         <!--ReviewForm-->
         <scene sceneID="pbi-Kd-HH0">

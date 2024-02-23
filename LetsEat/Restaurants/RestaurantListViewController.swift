@@ -22,7 +22,6 @@ class RestaurantListViewController: UIViewController, UICollectionViewDelegate{
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        dump("cusine: \(selectedCuisine as Any)")
         createData()
         setUpTitle()
     }
@@ -44,8 +43,7 @@ class RestaurantListViewController: UIViewController, UICollectionViewDelegate{
     
 
     func showRestaurantDetail(segue: UIStoryboardSegue){
-        if let viewController = segue.destination as? RestaurantDetailViewController,
-           let indexPath = collectionView.indexPathsForSelectedItems?.first{
+        if let viewController = segue.destination as? RestaurantDetailViewController,let indexPath = collectionView.indexPathsForSelectedItems?.first{
             selectedRestaurant = manager.restaurantItems(at: indexPath.row)
             viewController.selectedRestaurant = selectedRestaurant
         }
