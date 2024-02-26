@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 import UIKit
 import CoreImage
 
@@ -30,3 +31,5 @@ extension ImageFiltering{
         return UIImage(cgImage: filteredCGImage!, scale: 1.0, orientation: originalOrientation)
     }
 }
+
+

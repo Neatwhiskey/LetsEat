@@ -63,6 +63,8 @@
 		13E4D90D2B766C9800F223E8 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E4D90C2B766C9800F223E8 /* RestaurantCell.swift */; };
 		13E4D90F2B766EE800F223E8 /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E4D90E2B766EE800F223E8 /* NoDataView.swift */; };
 		13E4D9142B76763F00F223E8 /* NoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13E4D9132B76763F00F223E8 /* NoDataView.xib */; };
+		13F414BF2B8D22A200DFBEC4 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F414BE2B8D22A200DFBEC4 /* ReviewCell.swift */; };
+		13F414C12B8D238800DFBEC4 /* ReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F414C02B8D238800DFBEC4 /* ReviewsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +126,8 @@
 		13E4D90C2B766C9800F223E8 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 		13E4D90E2B766EE800F223E8 /* NoDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataView.swift; sourceTree = "<group>"; };
 		13E4D9132B76763F00F223E8 /* NoDataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataView.xib; sourceTree = "<group>"; };
+		13F414BE2B8D22A200DFBEC4 /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		13F414C02B8D238800DFBEC4 /* ReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +226,7 @@
 		137E714B2B62944C005F6F37 /* LetsEat */ = {
 			isa = PBXGroup;
 			children = (
+				13F414BD2B8D225C00DFBEC4 /* Reviews */,
 				13E1DBDD2B73B9D5009D1BC0 /* RestaurantDetail */,
 				13E1DBDC2B73B9CB009D1BC0 /* PhotoFilter */,
 				13E1DBDB2B73B9A6009D1BC0 /* ReviewForm */,
@@ -385,6 +390,15 @@
 			path = "No Data";
 			sourceTree = "<group>";
 		};
+		13F414BD2B8D225C00DFBEC4 /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				13F414BE2B8D22A200DFBEC4 /* ReviewCell.swift */,
+				13F414C02B8D238800DFBEC4 /* ReviewsViewController.swift */,
+			);
+			path = Reviews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -485,6 +499,7 @@
 				138AD9972B6C5E2200DAD69C /* ExploreItem.swift in Sources */,
 				136251CD2B7BAB8E006698DE /* PhotoFilterViewController.swift in Sources */,
 				136251CB2B7BA247006698DE /* FilterCell.swift in Sources */,
+				13F414C12B8D238800DFBEC4 /* ReviewsViewController.swift in Sources */,
 				136DB31E2B7271DB00615E1B /* DataManager.swift in Sources */,
 				136251C42B7B7AC8006698DE /* FilterDataManager.swift in Sources */,
 				136251C62B7B7BE3006698DE /* ImageFiltering.swift in Sources */,
@@ -507,6 +522,7 @@
 				138AD99D2B6C67AD00DAD69C /* ExploreCell.swift in Sources */,
 				13822F942B893CFE00F40715 /* LetsEatModel.xcdatamodeld in Sources */,
 				136DB3192B72665600615E1B /* RestaurantItem.swift in Sources */,
+				13F414BF2B8D22A200DFBEC4 /* ReviewCell.swift in Sources */,
 				13194B8A2B6D03080010EFC0 /* LocationViewController.swift in Sources */,
 				13194B8E2B6D0EED0010EFC0 /* LocationManager.swift in Sources */,
 			);

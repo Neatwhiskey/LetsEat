@@ -6,7 +6,6 @@
 //
 
 import Foundation
-
 struct FilterItem{
     let filter: String?
     let name : String?
