@@ -30,6 +30,11 @@ class RestaurantDetailViewController: UITableViewController {
         super.viewDidLoad()
         initalize()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        createRating()
+    }
 
    
     
@@ -83,8 +88,17 @@ private extension RestaurantDetailViewController{
     }
     
     func createRating(){
-        ratingsView.rating = 3.5
-        ratingsView.isEnabled = true
+        ratingsView.isEnabled = false
+        if let restaurantID = selectedRestaurant?.restaurantID{
+            let ratingValue = CoreDataManager.shared.fetchRestaurantRating(by: restaurantID)
+            ratingsView.rating = ratingValue
+            if ratingValue.isNaN{
+                overallRatingLabel.text = "0.0"
+            }else{
+                let roundedValue = ((ratingValue * 10).rounded() / 10)
+                overallRatingLabel.text = "\(roundedValue)"
+            }
+        }
     }
     func setUpLabels(){
         guard let restaurant = selectedRestaurant else{
