@@ -10,6 +10,7 @@ import AVFoundation
 
 class PhotoFilterViewController: UIViewController{
    
+    var selectedRestaurantID: Int?
     @IBOutlet var mainImageView: UIImageView!
     @IBOutlet var collectionView: UICollectionView!
     private let manager = FilterDataManager()
@@ -52,6 +53,19 @@ private extension PhotoFilterViewController {
         checkSource()
     }
     
+    func saveSelectedPhoto(){
+        if let mainImage = self.mainImageView.image{
+            var restPhotoItem = RestaurantPhotoItem()
+            restPhotoItem.date = Date()
+            restPhotoItem.photo = mainImage.preparingThumbnail(of: CGSize(width: 100, height: 100))
+            if let selRestID = selectedRestaurantID{
+                Int64(selRestID)
+            }
+            CoreDataManager.shared.addPhoto(restPhotoItem)
+        }
+        dismiss(animated: true, completion: nil)
+        
+    }
     func setupCollectionView() {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -94,6 +108,11 @@ private extension PhotoFilterViewController {
     @IBAction func onPhotoTapped(_ sender: Any) {
         checkSource()
     }
+    
+    @IBAction func onSaveTapped(_ sender: Any){
+        saveSelectedPhoto()
+    }
+
 }
 
 extension PhotoFilterViewController: UICollectionViewDataSource {
