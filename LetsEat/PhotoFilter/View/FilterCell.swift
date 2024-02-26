@@ -9,6 +9,7 @@ import UIKit
 
 class FilterCell: UICollectionViewCell {
     
+
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var thumbnailImageView: UIImageView!
     
@@ -32,4 +33,5 @@ extension FilterCell: ImageFiltering{
             }
         }
     }
+
 }
