@@ -21,9 +21,12 @@ class PhotoFilterViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         initialize()
+
+
     }
     
 }
+
     // MARK: - Private Extension
  private extension PhotoFilterViewController {
     
