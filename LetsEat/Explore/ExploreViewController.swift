@@ -58,6 +58,15 @@ class ExploreViewController: UIViewController, UICollectionViewDelegate{
 private extension ExploreViewController{
     func initialize(){
         manager.fetch()
+        setupCollectionView()
+    }
+    
+    func setupCollectionView() {
+        let flow = UICollectionViewFlowLayout()
+        flow.sectionInset = UIEdgeInsets(top: 7, left: 7, bottom: 7, right: 7)
+        flow.minimumInteritemSpacing = 0
+        flow.minimumLineSpacing = 7
+        collectionView.collectionViewLayout = flow
     }
     
     func showLocationList(segue: UIStoryboardSegue) {
@@ -122,6 +131,25 @@ extension ExploreViewController: UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
         manager.numberOfExploreItems()
+    }
+}
+
+extension ExploreViewController: UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        var columns: CGFloat = 2
+        if Device.isPad || (traitCollection.horizontalSizeClass != .compact) {
+            columns = 3
+        }
+        let viewWidth = collectionView.frame.size.width
+        let inset = 7.0
+        let contentWidth = viewWidth - inset * (columns + 1)
+        let cellWidth = contentWidth / columns
+        let cellHeight = cellWidth
+        return CGSize(width: cellWidth, height: cellHeight)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        CGSize(width: collectionView.frame.width, height: 100)
     }
 }
 
